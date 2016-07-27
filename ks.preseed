@@ -1,0 +1,2 @@
+d-i preseed/early_command string umount /media || true
+d-i preseed/late_command string in-target mkdir -p /home/user1/.ssh; cp /cdrom/id_rsa.pub /target/home/user1/.ssh/authorized_keys 
